@@ -1,4 +1,4 @@
-Program agregar_atras
+Program agregar_adelante
 
 Type list =  ^dato;
 
@@ -6,7 +6,7 @@ dato = record
 elemento:integer;
 siguiente: list;
 
-procedure agregarAlFinal(var pI:list; num:integer)
+procedure agregarAdelante(var pI:list; num:integer)
 var 
  nuevo:list
  begin
@@ -14,22 +14,19 @@ var
   if (pI = nil) then
   begin
    pI := nuevo;
-   pU := nuevo;
   end
   else
    begin
-    pU^.sig := nuevo;
-    pU := nuevo; 
+    nuevo^.sig := pI;
+    pI := nuevo; 
    end
  end
 
 var
  pI:list;
- pU:list;
  num:integer;
 begin
  num := 10;
  pI:= nil;
- pU:= nil;
- agregarAlFinal(pI,pU,num);
+ agregarAdelante(pI,num);
 end.
