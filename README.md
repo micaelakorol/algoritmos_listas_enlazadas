@@ -1,0 +1,2 @@
+-Operaciones básicas con listas enlazadas (Crear, agregar a una lista, eliminar,busqueda,recorrido)
+-Ejercicios de práctica
