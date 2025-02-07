@@ -64,8 +64,8 @@ procedure generarLista(var l:lista)
 var 
  s:sonda;
 begin
- leerSonda(s);
  repeat 
+  leerSonda(s); 
   agregarAdelante(l,s); 
   until(s.nombre = "GAIA") // Finaliza si el nombre es GAIA.
 end;
