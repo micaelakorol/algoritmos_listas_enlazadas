@@ -69,7 +69,8 @@ begin
 pesoTotal := 0;
  for i := i to 42 do 
  begin
-  pesoTotal := pesoTotal + p.peso[i];
+// Accede a la posición i del array 'peso' dentro del registro 'p'
+  pesoTotal := pesoTotal + p.peso[i]; 
  end;
   aumentoPesoTotal := pesoTotal;
 end;
